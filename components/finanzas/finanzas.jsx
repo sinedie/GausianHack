@@ -5,7 +5,7 @@ export default function Finanzas () {
     return ( <div className="courses-container">
     <div className="course">
         <div className="course-image">
-            <img src="finanzas1.jpg"/>
+            <img src="finanzas1.jpg" width={300}/>
         </div>
         <div className="course-info">
             <h3 className="course-title">10 consejos para mejorar tu puntaje crediticio</h3>
@@ -16,7 +16,7 @@ export default function Finanzas () {
     </div>
     <div className="course">
         <div className="course-image">
-            <img src="finanzas2.jpg"/>
+            <img src="finanzas2.jpg" width={300}/>
         </div>
         <div className="course-info">
             <h3 className="course-title">Cómo crear un presupuesto personal en 5 sencillos pasos</h3>
@@ -27,7 +27,7 @@ export default function Finanzas () {
     </div>
     <div className="course">
         <div className="course-image">
-            <img src="finanzas3.jpg"/>
+            <img src="finanzas3.jpg" width={300}/>
         </div>
         <div className="course-info">
             <h3 className="course-title">Gastos innecesarios: cómo identificarlos y eliminarlos de tu presupuesto</h3>

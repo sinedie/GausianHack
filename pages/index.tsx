@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import StyledPaper from "@/components/StyledPaper";
 import { useRouter } from "next/router";
 import Inversiones from "@/components/inversiones/inversiones";
+import Finanzas from "@/components/finanzas/finanzas";
 
 function HomeMessage({ onSubmit }: { onSubmit: (msg: string) => void }) {
   const [message, setMessage] = useState<string | null>(null);
@@ -126,6 +127,9 @@ export default function Home() {
           />
           <div>
             <Inversiones></Inversiones>
+          </div>
+          <div>
+            <Finanzas></Finanzas>
           </div>
         </>
       )}

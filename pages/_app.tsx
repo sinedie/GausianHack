@@ -1,4 +1,5 @@
 import Head from "next/head";
+import "../styles/globals.css"
 import ThemeProviderContext from "@/components/layout/ThemeProvider";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";

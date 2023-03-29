@@ -2,8 +2,9 @@ export default function Courses() {
   return (
     <div className="courses-container">
       <div className="course">
-        <div className="course-image"></div>
-        <img src="course1.jpg" width={300} />
+        <div className="course-image">
+          <img src="course1.jpg" width={300} />
+        </div>
         <div className="course-info">
           <h3 className="course-title">
             Inteligencia Financiera: Guía completa Finanzas Personales
@@ -25,8 +26,9 @@ export default function Courses() {
       </div>
 
       <div className="course">
-        <div className="course-image"></div>
-        <img src="course2.jpg" width={300} />
+        <div className="course-image">
+          <img src="course2.jpg" width={300} />
+        </div>
         <div className="course-info">
           <h3 className="course-title">
             Microsoft Power BI para los Departamentos Contable y Financiero de
@@ -42,8 +44,9 @@ export default function Courses() {
       </div>
 
       <div className="course">
-        <div className="course-image"></div>
-        <img src="course3.png" width={300} />
+        <div className="course-image">
+          <img src="course3.png" width={300} />
+        </div>
         <div className="course-info">
           <h3 className="course-title">
             Coaching en Educación Financiera e Inteligencia Financiera

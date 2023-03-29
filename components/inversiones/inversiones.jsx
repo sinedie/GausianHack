@@ -3,7 +3,7 @@ export default function Inversiones() {
     <div className="courses-container">
       <div className="course">
         <div className="course-image">
-          <img src="../../public/inversiones1.jpg" />
+          <img src="inversiones1.jpg" />
         </div>
         <div className="course-info">
           <h3 className="course-title">
@@ -21,7 +21,7 @@ export default function Inversiones() {
 
       <div className="course">
         <div className="course-image">
-          <img src="../../public/inversiones2.jpg" />
+          <img src="inversiones2.jpg" />
         </div>
         <div className="course-info">
           <h3 className="course-title">
@@ -39,7 +39,7 @@ export default function Inversiones() {
 
       <div className="course">
         <div className="course-image">
-          <img src="../../public/inversiones3.jpg" />
+          <img src="inversiones3.jpg" />
         </div>
         <div className="course-info">
           <h3 className="course-title">

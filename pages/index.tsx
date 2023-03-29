@@ -5,6 +5,7 @@ import Grid from "@mui/material/Grid";
 import { useEffect, useState } from "react";
 import StyledPaper from "@/components/StyledPaper";
 import { useRouter } from "next/router";
+import Inversiones from "@/components/inversiones/inversiones";
 
 function HomeMessage({ onSubmit }: { onSubmit: (msg: string) => void }) {
   const [message, setMessage] = useState<string | null>(null);
@@ -21,6 +22,12 @@ function HomeMessage({ onSubmit }: { onSubmit: (msg: string) => void }) {
 
   return (
     <>
+      <Grid item md={12}>
+        <Typography variant="h4" textAlign={"center"}>
+          Historias financieras
+        </Typography>
+      </Grid>
+
       <Grid item md={12}>
         <StyledPaper>
           <>
@@ -106,6 +113,22 @@ export default function Home() {
           </>
         )}
       </Grid>
+
+      {!message && (
+        <>
+          <div
+            style={{
+              backgroundColor: "white",
+              width: "100%",
+              height: "2px",
+              marginTop: "25em",
+            }}
+          />
+          <div>
+            <Inversiones></Inversiones>
+          </div>
+        </>
+      )}
     </Container>
   );
 }

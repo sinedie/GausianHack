@@ -1,0 +1,9 @@
+.courses-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 2;
+  .course {
+    padding: 10px;
+  }
+}

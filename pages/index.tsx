@@ -11,7 +11,7 @@ function HomeMessage({ onSubmit }: { onSubmit: (msg: string) => void }) {
 
   const onYesClick = () => setMessage("Ahora queremos saber tu historia");
   const onNoClick = () =>
-    setMessage("Aun asi, Quedate con nosotros para mejorar tus finanzas");
+    setMessage("Aun así, quédate con nosotros para mejorar tus finanzas");
 
   useEffect(() => {
     if (message) {

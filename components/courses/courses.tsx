@@ -14,13 +14,7 @@ export default function Courses() {
             capital, hacer las mejores inversiones para tu capital, construir
             capital comenzando con la mejor técnica de ahorro, tomar
             financiamiento para lograr negocios, aprovechar el dinero de otros
-            para hacer crecer tus bienes, salir de deudas que solo te quitan
-            dinero, no construir deudas conociendo tu cerebro, tener una alta
-            autoestima para que los demás no se queden con tu dinero, salir de
-            la pesadilla de no saber cómo usar el dinero, lograr los sueños que
-            tienes para los que necesitas dinero, formas de aumentar tus
-            ingresos y así construir capital, llegar a la libertad financiera o
-            retiro para disfrutar sin obligación de trabajar.
+            para hacer crecer tus bienes...
           </p>
         </div>
       </div>

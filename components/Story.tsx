@@ -41,7 +41,7 @@ export default function Story({ story }: { story: StoryCase[] }) {
       </StyledPaper>
 
       <Grid container spacing={1}>
-        <Grid item md={12}>
+        <Grid item md={12} sx={{ mt: 5 }}>
           <Typography variant="h6" sx={{ textAlign: "center" }}>
             {story[storyNumber]?.question}
           </Typography>
@@ -59,10 +59,14 @@ export default function Story({ story }: { story: StoryCase[] }) {
           {showGood && <Alert>Esa es la decisión correcta</Alert>}
 
           {showError && (
-            <Alert severity="warning">
-              Podrias haberlo hecho mejor. Tenemos la siguiente información que
-              te puede ayudar
-            </Alert>
+            <>
+              <Alert severity="warning">
+                Podrias haberlo hecho mejor. Tenemos la siguiente información
+                que te puede ayudar
+              </Alert>
+
+              <Courses></Courses>
+            </>
           )}
         </Grid>
       </Grid>

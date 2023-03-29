@@ -17,43 +17,43 @@ import {
 
 const data = [
   {
-    name: "Page A",
+    name: "Feb 2022",
     uv: 4000,
     pv: 2400,
     amt: 2400,
   },
   {
-    name: "Page B",
+    name: "Mar 2022",
     uv: 3000,
     pv: 1398,
     amt: 2210,
   },
   {
-    name: "Page C",
+    name: "Abr 2022",
     uv: 2000,
     pv: 9800,
     amt: 2290,
   },
   {
-    name: "Page D",
+    name: "May 2022",
     uv: 2780,
     pv: 3908,
     amt: 2000,
   },
   {
-    name: "Page E",
+    name: "Jun 2022",
     uv: 1890,
     pv: 4800,
     amt: 2181,
   },
   {
-    name: "Page F",
+    name: "Jul 2022",
     uv: 2390,
     pv: 3800,
     amt: 2500,
   },
   {
-    name: "Page G",
+    name: "Ago 2022",
     uv: 3490,
     pv: 4300,
     amt: 2100,
@@ -79,9 +79,10 @@ export default function invert() {
       maxWidth={"md"}
       sx={{ p: 3, display: "grid", placeItems: "center", height: "50vh" }}
     >
-      
-
-      <Typography variant="h5">Teniendo en cuenta la fluctuacion del bitcoin en el anterior anio y en el actual... harias una inversion?</Typography>
+      <Typography variant="h5">
+        Teniendo en cuenta la fluctuacion del bitcoin en el anterior anio y en
+        el actual... harias una inversion?
+      </Typography>
 
       <ResponsiveContainer width="100%" height="100%">
         <LineChart
@@ -119,11 +120,11 @@ export default function invert() {
         </Button>
 
         <Grid item md={12}>
-          {showGood && <Alert>Esa es la desicion correcta</Alert>}
+          {showGood && <Alert>Esa es la decisión correcta</Alert>}
 
           {showError && (
             <Alert severity="warning">
-              Podrias haberlo hecho mejor. Tenemos la siguiente informacion que
+              Podrias haberlo hecho mejor. Tenemos la siguiente información que
               te puede ayudar
             </Alert>
           )}

@@ -114,7 +114,7 @@ export default function invert() {
 
       <Grid container spacing={1}>
         <Grid item md={12}>
-          <Grid container spacing={2}>
+          <Grid container spacing={1}>
             <Grid item>
               <Button onClick={goodAnwser} variant="contained">
                 Si

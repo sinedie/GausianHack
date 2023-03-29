@@ -14,6 +14,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import Inversiones from '@/components/inversiones/inversiones'
 
 const data = [
   {
@@ -123,10 +124,14 @@ export default function invert() {
           {showGood && <Alert>Esa es la decisión correcta</Alert>}
 
           {showError && (
-            <Alert severity="warning">
-              Podrias haberlo hecho mejor. Tenemos la siguiente información que
-              te puede ayudar
-            </Alert>
+            <>
+              <Alert severity="warning">
+                Podrias haberlo hecho mejor. Tenemos la siguiente información
+                que te puede ayudar
+              </Alert>
+
+              <Inversiones></Inversiones>
+            </>
           )}
         </Grid>
       </Grid>

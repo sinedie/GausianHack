@@ -15,7 +15,7 @@ export default function MyApp({
   return (
     <>
       <Head>
-        <title>GausianHack</title>
+        <title>Finer</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
 

@@ -7,7 +7,7 @@ export default function UserForm() {
   return (
     <Container maxWidth={"md"} sx={{ p: 3 }}>
       <Typography variant="h4" sx={{ textAlign: "center" }}>
-        Cuentanos quien eres
+        Cuéntanos quién eres
       </Typography>
 
       <Form />

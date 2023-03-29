@@ -24,7 +24,7 @@ function HomeMessage({ onSubmit }: { onSubmit: (msg: string) => void }) {
       <Grid item md={12}>
         <StyledPaper>
           <>
-          Carol gana 2 salarios minimos y desea comprarse una moto para facilitar su transporte al trabajo. Pero siempre se gasta lo que le queda en gastos innecesarios.
+          Carol gana 2 salarios mínimos y desea comprarse una moto para facilitar su transporte al trabajo. Pero siempre se gasta lo que le queda en gastos innecesarios.
           </>
         </StyledPaper>
       </Grid>

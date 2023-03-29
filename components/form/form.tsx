@@ -39,7 +39,7 @@ export default function Form() {
   return (
     <div className="form-container">
       <form className="form" onSubmit={handleSubmit}>
-        <Typography variant='h5'>Cual es tu presupuesto?</Typography>
+        <Typography variant='h5'>¿Cuál es tu presupuesto?</Typography>
 
         <Grid container spacing={2}>
           <Grid md item>

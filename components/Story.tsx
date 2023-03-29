@@ -55,11 +55,11 @@ export default function Story({ story }: { story: StoryCase[] }) {
         ))}
 
         <Grid item md={12}>
-          {showGood && <Alert>Esa es la desicion correcta</Alert>}
+          {showGood && <Alert>Esa es la decisión correcta</Alert>}
 
           {showError && (
             <Alert severity="warning">
-              Podrias haberlo hecho mejor. Tenemos la siguiente informacion que
+              Podrias haberlo hecho mejor. Tenemos la siguiente información que
               te puede ayudar
             </Alert>
           )}

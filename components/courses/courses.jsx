@@ -3,8 +3,9 @@ export default function Courses() {
     <div className="courses-container">
 
       <div className="course">
-        <div className="course-image"></div>
-        <img src="../../public/course1.jpg"/>
+        <div className="course-image">
+          <img src="../../public/course1.jpg"/>
+        </div>
         <div className="course-info">
           <h3 className="course-title">Inteligencia Financiera: Guía completa Finanzas Personales</h3>
           <p className="course-description">Este curso está disponible en Udemy y te enseña cómo multiplicar tu capital, hacer las mejores inversiones para tu capital, construir capital comenzando con la mejor técnica de ahorro, tomar financiamiento para lograr negocios, aprovechar el dinero de otros para hacer crecer tus bienes, salir de deudas que solo te quitan dinero, no construir deudas conociendo tu cerebro, tener una alta autoestima para que los demás no se queden con tu dinero, salir de la pesadilla de no saber cómo usar el dinero, lograr los sueños que tienes para los que necesitas dinero, formas de aumentar tus ingresos y así construir capital, llegar a la libertad financiera o retiro para disfrutar sin obligación de trabajar.</p>
@@ -32,3 +33,11 @@ export default function Courses() {
     </div>
   );
 }
+
+export default function Inversiones () {
+  return <div className="inversiones-contenedor">
+
+  
+  </div>
+}
+

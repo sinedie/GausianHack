@@ -14,7 +14,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import Inversiones from '@/components/inversiones/inversiones'
+import Inversiones from "@/components/inversiones/inversiones";
 
 const data = [
   {
@@ -81,17 +81,17 @@ export default function invert() {
       sx={{ p: 3, display: "grid", placeItems: "center", height: "50vh" }}
     >
       <Typography variant="h5">
-        Teniendo en cuenta la fluctuacion del bitcoin en el anterior anio y en
-        el actual... harias una inversion?
+        Teniendo en cuenta la fluctuación del bitcoin en el anterior año y en el
+        actual... ¿invertirías?
       </Typography>
 
       <ResponsiveContainer width="100%" height="100%">
         <LineChart
           width={500}
-          height={300}
+          height={500}
           data={data}
           margin={{
-            top: 5,
+            top: 45,
             right: 30,
             left: 20,
             bottom: 5,
@@ -113,12 +113,20 @@ export default function invert() {
       </ResponsiveContainer>
 
       <Grid container spacing={1}>
-        <Button onClick={goodAnwser} variant="contained">
-          Si
-        </Button>
-        <Button onClick={badAnwser} variant="contained">
-          No
-        </Button>
+        <Grid item md={12}>
+          <Grid container spacing={2}>
+            <Grid item>
+              <Button onClick={goodAnwser} variant="contained">
+                Si
+              </Button>
+            </Grid>
+            <Grid item>
+              <Button onClick={badAnwser} variant="contained">
+                No
+              </Button>
+            </Grid>
+          </Grid>
+        </Grid>
 
         <Grid item md={12}>
           {showGood && <Alert>Esa es la decisión correcta</Alert>}

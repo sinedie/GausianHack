@@ -11,7 +11,7 @@ function HomeMessage({ onSubmit }: { onSubmit: (msg: string) => void }) {
 
   const onYesClick = () => setMessage("Ahora queremos saber tu historia");
   const onNoClick = () =>
-    setMessage("Aun así, quédate con nosotros para mejorar tus finanzas");
+    setMessage("Quédate con nosotros para mejorar tus finanzas");
 
   useEffect(() => {
     if (message) {
@@ -24,7 +24,9 @@ function HomeMessage({ onSubmit }: { onSubmit: (msg: string) => void }) {
       <Grid item md={12}>
         <StyledPaper>
           <>
-          Carol gana 2 salarios mínimos y desea comprarse una moto para facilitar su transporte al trabajo. Pero siempre se gasta lo que le queda en gastos innecesarios.
+            Carol gana 2 salarios mínimos y desea comprarse una moto para
+            facilitar su transporte al trabajo. Pero siempre se gasta lo que le
+            queda en gastos innecesarios.
           </>
         </StyledPaper>
       </Grid>
@@ -32,7 +34,8 @@ function HomeMessage({ onSubmit }: { onSubmit: (msg: string) => void }) {
       <Grid item md={12}>
         <StyledPaper>
           <>
-          Julian es desarollador backend, gana bien pero quiere aumentar sus ganacias, no sabe como invertir su salario. 
+            Julian es desarollador backend, gana bien pero quiere aumentar sus
+            ganacias, no sabe como invertir su salario.
           </>
         </StyledPaper>
       </Grid>

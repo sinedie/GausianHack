@@ -1,8 +1,33 @@
-import '@/styles/globals.css'
-import { UserProvider } from '@/context/user-context'
-import type { AppProps } from 'next/app'
+import Head from "next/head";
+import ThemeProviderContext from "@/components/layout/ThemeProvider";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import { UserProvider } from "@/context/user-context";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return 
-  <UserProvider> <Component {...pageProps} /></UserProvider>
+// This default export is required in a new `pages/_app.js` file.
+export default function MyApp({
+  Component,
+  pageProps,
+}: {
+  Component: any;
+  pageProps: any;
+}) {
+  return (
+    <>
+      <Head>
+        <title>GausianHack</title>
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+      </Head>
+
+      <ThemeProviderContext>
+        <div id="#root">
+          <Header />
+          <UserProvider>
+            <Component {...pageProps} />
+          </UserProvider>
+          <Footer />
+        </div>
+      </ThemeProviderContext>
+    </>
+  );
 }

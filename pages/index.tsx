@@ -10,7 +10,8 @@ function HomeMessage({ onSubmit }: { onSubmit: (msg: string) => void }) {
   const [message, setMessage] = useState<string | null>(null);
 
   const onYesClick = () => setMessage("Ahora queremos saber tu historia");
-  const onNoClick = () => setMessage("Te puede pasar");
+  const onNoClick = () =>
+    setMessage("Aun asi, Quedate con nosotros para mejorar tus finanzas");
 
   useEffect(() => {
     if (message) {
@@ -31,21 +32,31 @@ function HomeMessage({ onSubmit }: { onSubmit: (msg: string) => void }) {
         </StyledPaper>
       </Grid>
 
-      <Grid item md={12}>
-        <Typography variant="h2" textAlign={"center"}>
-          ¿Te ha pasado?
+      <Grid item md={12} sx={{ mt: 4 }}>
+        <Typography variant="h4" textAlign={"center"}>
+          ¿Has vivido algo similar?
         </Typography>
       </Grid>
 
       <Grid item md={12} sx={{ textAlign: "center" }}>
         <Grid container spacing={2}>
           <Grid item md>
-            <Button fullWidth variant="contained" onClick={onYesClick}>
+            <Button
+              fullWidth
+              variant="contained"
+              onClick={onYesClick}
+              size="large"
+            >
               Si
             </Button>
           </Grid>
           <Grid item md>
-            <Button fullWidth variant="contained" onClick={onNoClick}>
+            <Button
+              fullWidth
+              variant="contained"
+              onClick={onNoClick}
+              size="large"
+            >
               No
             </Button>
           </Grid>
@@ -56,17 +67,17 @@ function HomeMessage({ onSubmit }: { onSubmit: (msg: string) => void }) {
 }
 
 export default function Home() {
-  const router = useRouter()
+  const router = useRouter();
   const [message, setMessage] = useState<string | null>(null);
 
   const start = () => {
-    router.push('stories')
+    router.push("userform");
   };
 
   return (
     <Container
       maxWidth={"md"}
-      sx={{ p: 3, display: "grid", placeItems: "center", height: "50vh" }}
+      sx={{ p: 3, display: "grid", placeItems: "center", height: "60vh" }}
     >
       <Grid container spacing={1}>
         {!message ? (
@@ -74,15 +85,13 @@ export default function Home() {
         ) : (
           <>
             <Grid item md={12}>
-              <StyledPaper>
-                <Typography variant="h4" sx={{ textAlign: "center" }}>
-                  {message}
-                </Typography>
-              </StyledPaper>
+              <Typography variant="h4" sx={{ textAlign: "center" }}>
+                {message}
+              </Typography>
             </Grid>
 
             <Grid item md sx={{ textAlign: "center" }}>
-              <Button variant="contained" onClick={start}>
+              <Button variant="contained" onClick={start} size="large">
                 Comenzar
               </Button>
             </Grid>

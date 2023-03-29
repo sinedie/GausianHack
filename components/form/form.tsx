@@ -1,19 +1,20 @@
-import "./form.scss";
+// import "./form.scss";
 import { useState, useContext } from "react";
 import { UserContext } from "../../context/user-context";
-import TextInput from "../text-input/text-input";
-import Button from "../button/button.component";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
 
 export default function Form() {
   const [formFields, setFormFields] = useState({});
   const { setCurrentUser } = useContext(UserContext);
 
-  function handleChange(e:any) {
+  function handleChange(e: any) {
     const { name, value } = e.target;
     setFormFields({ ...formFields, [name]: value });
   }
 
-  function handleSubmit(e:any) {
+  function handleSubmit(e: any) {
     e.preventDefault();
     setCurrentUser(formFields);
   }
@@ -36,27 +37,38 @@ export default function Form() {
       <form className="form" onSubmit={handleSubmit}>
         <h2>Cual es tu presupuesto?</h2>
 
-        <TextInput
-          label="Primer nombre"
-          type="text"
-          required
-          onChange={handleChange}
-          value={primerNombre}
-          name="primerNombre"
-        />
-
-        <TextInput
-          label="Apellido"
-          type="text"
-          required
-          onChange={handleChange}
-          value={apellido}
-          name="apellido"
-        />
+        <Grid container spacing={2}>
+          <Grid md item>
+            <TextField
+              fullWidth
+              margin="normal"
+              label="Nombres"
+              type="text"
+              required
+              onChange={handleChange}
+              value={primerNombre}
+              name="primerNombre"
+            />
+          </Grid>
+          <Grid item md>
+            <TextField
+              fullWidth
+              margin="normal"
+              label="Apellidos"
+              type="text"
+              required
+              onChange={handleChange}
+              value={apellido}
+              name="apellido"
+            />
+          </Grid>
+        </Grid>
 
         <h2>Ingresos</h2>
 
-        <TextInput
+        <TextField
+          fullWidth
+          margin="normal"
           label="Ingresos Netos"
           type="text"
           required
@@ -67,7 +79,9 @@ export default function Form() {
 
         <h2>Gastos</h2>
 
-        <TextInput
+        <TextField
+          fullWidth
+          margin="normal"
           label="Alimentacion"
           type="text"
           required
@@ -76,7 +90,9 @@ export default function Form() {
           name="alimentacion"
         />
 
-        <TextInput
+        <TextField
+          fullWidth
+          margin="normal"
           label="Transporte"
           type="text"
           required
@@ -85,7 +101,9 @@ export default function Form() {
           name="Transporte"
         />
 
-        <TextInput
+        <TextField
+          fullWidth
+          margin="normal"
           label="Deuda"
           type="text"
           required
@@ -94,7 +112,9 @@ export default function Form() {
           name="Deuda"
         />
 
-        <TextInput
+        <TextField
+          fullWidth
+          margin="normal"
           label="Arriendo"
           type="text"
           required
@@ -103,7 +123,9 @@ export default function Form() {
           name="Arriendo"
         />
 
-        <TextInput
+        <TextField
+          fullWidth
+          margin="normal"
           label="Servicios"
           type="text"
           required
@@ -112,7 +134,9 @@ export default function Form() {
           name="Servicios"
         />
 
-        <TextInput
+        <TextField
+          fullWidth
+          margin="normal"
           label="Ocio"
           type="text"
           required
@@ -121,7 +145,9 @@ export default function Form() {
           name="Ocio"
         />
 
-        <TextInput
+        <TextField
+          fullWidth
+          margin="normal"
           label="Otros"
           type="text"
           required
@@ -130,8 +156,15 @@ export default function Form() {
           name="Otros"
         />
 
-        <Button type="submit">Enviar</Button>
-
+        <Button
+          type="submit"
+          fullWidth
+          variant="contained"
+          size="large"
+          sx={{ mt: 3 }}
+        >
+          Enviar
+        </Button>
       </form>
     </div>
   );

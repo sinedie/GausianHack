@@ -23,10 +23,15 @@ function HomeMessage({ onSubmit }: { onSubmit: (msg: string) => void }) {
       <Grid item md={12}>
         <StyledPaper>
           <>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+          Carol gana 2 salarios minimos y desea comprarse una moto para facilitar su transporte al trabajo. Pero siempre se gasta lo que le queda en gastos innecesarios.
+          </>
+        </StyledPaper>
+      </Grid>
+
+      <Grid item md={12}>
+        <StyledPaper>
+          <>
+          Julian es desarollador backend, gana bien pero quiere aumentar sus ganacias, no sabe como invertir su salario. 
           </>
         </StyledPaper>
       </Grid>

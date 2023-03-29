@@ -117,6 +117,11 @@ export default function Home() {
 
       {!message && (
         <>
+
+      <Typography variant="h4" textAlign={"center"}>
+          Inversiones
+        </Typography>
+
           <div
             style={{
               backgroundColor: "white",
@@ -128,6 +133,22 @@ export default function Home() {
           <div>
             <Inversiones></Inversiones>
           </div>
+
+          <br />
+
+          <Typography variant="h4" textAlign={"center"}>
+          Finanzas
+        </Typography>
+
+          <div
+            style={{
+              backgroundColor: "white",
+              width: "100%",
+              height: "2px",
+              marginTop: "25em",
+            }}
+          />
+          
           <div>
             <Finanzas></Finanzas>
           </div>

@@ -3,6 +3,7 @@ import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import React, { useState } from "react";
+import Courses from "./courses/courses";
 import StyledPaper from "./StyledPaper";
 
 interface StoryCase {
